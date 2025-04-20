@@ -5,7 +5,6 @@ from datetime import datetime
 import requests
 import plotly.graph_objects as go
 
-
 fund_url = 'http://localhost:9393/chart/fund/BWT6410561408'
 fund_api_response = requests.get(fund_url)
 if fund_api_response.status_code == 200:
