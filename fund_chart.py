@@ -12,7 +12,6 @@ if fund_api_response.status_code == 200:
     chart_dates = [datetime.fromisoformat(dt) for dt in chart_data.keys()]
     chart_values = [float(val) for val in chart_data.values()]
 
-
     fig = go.Figure()
 
     fig.add_trace(go.Scatter(
